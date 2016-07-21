@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Нёрдс - каталог</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  </head>
+  <body>
+    <div class="wrapper-header-slider">
+      <header class="main-header">
+        <div class="index-logo">
+          <a href="index.html">
+            <img src="img/logo.png" width="139" height="56" alt="Нёрдс" title="nerds">
+          </a>
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Cтудия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a class="main-navigation-active" href="shop.html">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="cart-block">
+          <a class="cart" href="#">
+            <span class="icon-basket"></span>
+            Корзина
+          </a>
+        </div>
+      </header>
+      <section class="welcome-shop">
+        <h1>Добро пожаловать в магазин<br> готовых макетов</h1>
+      </section>
+    </div>
+    <div class="container container-shop">
+      <aside class="filtres">
+        <form class="filtres-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="cost">
+            <h2>Cтоимость:</h2>
+            <div class="range-block-wrapper">
+              <div class="range-block">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+            </div>
+            <div class="range-count">
+              <div class="range-min">
+                <label class="min-price">от
+                <input type="text" name="min-range" id="min-range" value="0"></label>
+              </div>
+              <div class="range-max">
+                <label class="max-price">до
+                <input type="text" name="max-range" id="max-range" value="15000"></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="choose-grid">
+            <h2>Сетка:</h2>
+            <div class="radio">
+              <input type="radio" checked="checked" name="choose-grid" id="adaptive">
+              <label class="icon-circle" for="adaptive">
+                <span>Адаптивная</span>
+              </label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="choose-grid" id="fixed">
+              <label class="icon-circle" for="fixed">
+                <span>Фиксированная</span>
+              </label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="choose-grid" id="flexible" disabled>
+              <label class="icon-circle" for="flexible">
+                <span>Резиновая</span>
+              </label>
+            </div>
+          </div>
+          <div class="features">
+            <h2>Особенности:</h2>
+            <div class="checkbox">
+              <input type="checkbox" name="slider" id="slider" checked>
+              <label class="icon-check" for="slider">
+                <span>Слайдер</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" name="block-advantage" id="block-advantage">
+              <label class="icon-check" for="block-advantage">
+                <span>Блок преимуществ</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" name="news" id="news" checked>
+              <label class="icon-check" for="news">
+                <span>Новости</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" name="gallery" id="gallery" disabled>
+              <label class="icon-check" for="gallery">
+                <span>Галерея</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" name="cart" id="cart">
+              <label class="icon-check" for="cart">
+                <span>Корзина</span>
+              </label>
+            </div>
+          </div>
+          <button class="btn btn-show" type="submit">Показать</button>
+        </form>
+      </aside>
+      <section class="shop-mockups">
+        <div class="shop-sort">
+          <div class="shop-sort-type">
+            <span class="shop-sort-title">Сортировать:</span>
+            <ul>
+              <li>
+                <a href="#">По цене</a>
+              </li>
+              <li>
+                <a href="#">По типу</a>
+              </li>
+              <li>
+                <a href="#">По функционалу</a>
+              </li>
+            </ul>
+          </div>
+          <div class="shop-sort-rating">
+            <a class="icon-down-dir icon-down-dir-active" href="#"></a>
+            <a class="icon-up-dir" href="#"></a>
+          </div>
+        </div>
+        <article class="features-item">
+          <div class="image-mockup image-mockup-aviator">
+            <div class="features-item-hover">
+              <h1>Aviator</h1>
+              <p>Одностраничный макет <br> с авторским дизайном</p>
+              <a class="btn btn-price" href="#">8000 Р.</a>
+            </div>
+          </div>
+        </article>
+        <article class="features-item">
+          <div class="image-mockup image-mockup-sunset">
+            <div class="features-item-hover">
+              <h1>Sunset</h1>
+              <p>Интернет-магазин <br> с личным кабинетом</p>
+              <a class="btn btn-price" href="#">10000 Р.</a>
+            </div>
+          </div>
+        </article>
+        <article class="features-item">
+          <div class="image-mockup image-mockup-forte">
+            <div class="features-item-hover">
+              <h1>Forte</h1>
+              <p>Отличный макет <br> для личного блога</p>
+              <a class="btn btn-price" href="#">5000 Р.</a>
+            </div>
+          </div>
+        </article>
+        <article class="features-item">
+          <div class="image-mockup image-mockup-modern">
+            <div class="features-item-hover">
+              <h1>Modern Organic<br> Thai</h1>
+              <p>Сайт для ресторана <br> быстрого питания</p>
+              <a class="btn btn-price" href="#">12000 Р.</a>
+            </div>
+          </div>
+        </article>
+        <article class="features-item">
+          <div class="image-mockup image-mockup-avenue">
+            <div class="features-item-hover">
+              <h1>Avenue</h1>
+              <p>Макет для блога <br> о путешествиях</p>
+              <a class="btn btn-price" href="#">8000 Р.</a>
+            </div>
+          </div>
+        </article>
+        <article class="features-item">
+          <div class="image-mockup image-mockup-dovetail">
+            <div class="features-item-hover">
+              <h1>Dovetail</h1>
+              <p>Интернет-магазин <br> с галереей товаров</p>
+              <a class="btn btn-price" href="#">10000 Р.</a>
+            </div>
+          </div>
+        </article>
+        <div class="pagination">
+          <ul>
+            <li><a class="btn btn-pagination btn-pagination-active" href="#">1</a></li>
+            <li><a class="btn btn-pagination" href="#">2</a></li>
+            <li><a class="btn btn-pagination" href="#">3</a></li>
+            <li><a class="btn btn-pagination btn-pagination-next" href="#">Следующая</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+   <section class="contact-us-popup">
+      <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
+        <span class="btn-popup-close" title="Закрыть"></span>
+        <div class="popup-form-input input-name">
+          <label class="name" for="name">Ваше имя:</label>
+          <input type="text" name="name" id="name"  placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div class="popup-form-input input-email">
+          <label class="email" for="email">Ваш e-mail:</label>
+          <input type="email" name="email" id="email"  placeholder="Для отправки ответа">
+        </div>
+        <div class="popup-form-textarea">
+          <label class="text-letter" for="text-letter">Текст письма:</label>
+          <textarea name="textletter" id="text-letter"  placeholder="В свободной форме" cols="40" rows="3"></textarea>
+        </div>
+        <button class="btn btn-send" type="submit">Отправить</button>
+      </form>
+    </section>
+    <section class="contacts-map">
+      <div class="contact-us">
+        <h3>NЁRDS design studio</h3>
+        <p>191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8 <br><br> тел. +7 (812) 275-75-75</p>
+        <a class="btn btn-contact-us" href="/contact-us-form.html">Напишите нам</a>
+      </div>
+      <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.5737629548605!2d30.318895523483082!3d59.93960435112352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1467892172376" allowfullscreen></iframe>
+    </section>
+    <div class="container">
+      <footer class="main-footer">
+        <div class="footer-social">
+          <a class="social icon-vk" href="#" target="_blank" title="Вконтакте"></a>
+          <a class="social icon-facebook" href="#" target="_blank" title="Фейсбук"></a>
+          <a class="social icon-instagramm" href="#" target="_blank" title="Инстаграм"></a>
+        </div>
+        <div class="call-friendship">
+          <h1>Давайте дружить, это выгодно!</h1>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+    <!-- <script src="js/scripts.min.js"></script> -->
+  </body>
+</html>
