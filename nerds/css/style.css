@@ -147,6 +147,8 @@ ul {
 .index-logo {
   width: 139px;
   height: 56px;
+
+  vertical-align: middle;
 }
 .main-navigation {
   margin-left: 180px;
@@ -200,9 +202,11 @@ ul {
   font-weight: 500;
 }
 .learn-more-action p {
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
 .btn {
+  display: inline-block;
+
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
@@ -264,7 +268,7 @@ ul {
   background-color: #c09b24;
 }
 .btn-contact-us {
-  padding: 12px 54px;
+  padding: 10px 56px;
 
   background-color: #fb565a;
 }
@@ -286,7 +290,6 @@ ul {
   padding: 8px 35px;
 
   font-size: 18px;
-  line-height: 8.6px;
 
   background-color: #fb565a;
 }
@@ -320,6 +323,7 @@ ul {
   bottom: 113px;
   left: 49%;
   z-index: 100;
+  z-index: 1;
 
   text-align: center;
 
@@ -366,6 +370,8 @@ ul {
   width: 290px;
   margin: 0;
   padding: 0;
+
+  vertical-align: middle;
 }
 .mini-catalog-image img {
   width: 240px;
@@ -386,18 +392,21 @@ ul {
   text-transform: uppercase;
 }
 .mini-catalog-title p {
-  margin-bottom: 32px;
+  margin-bottom: 27px;
 
   font-size: 15px;
   line-height: 22px;
 }
 .about-studio {
+  padding-top: 70px;
   padding-bottom: 47px;
 
   border-bottom: 2px solid #eeeeee;
 }
 .about-studio-info {
   min-width: 570px;
+
+  vertical-align: middle;
 }
 .about-studio-info li,
 .about-studio-work li {
@@ -412,7 +421,7 @@ ul {
   color: red;
 }
 .about-studio-info h1 {
-  margin-top: 70px;
+  margin-top: 0;
   margin-bottom: 19px;
 }
 .about-studio-info p {
@@ -427,6 +436,8 @@ ul {
 }
 .about-studio-work {
   min-width: 300px;
+
+  vertical-align: middle;
 }
 .about-studio-logo {
   margin-bottom: 21px;
@@ -470,6 +481,7 @@ ul {
   opacity: 0.2;
 }
 .clients img:hover {
+  cursor: pointer;
   opacity: 1;
 }
 .glukhanko-img {
@@ -497,14 +509,15 @@ ul {
 }
 .contact-us {
   position: absolute;
-  top: 120px;
+  top: 87px;
   bottom: 0;
-  left: 137px;
+  left: 235px;
+  z-index: 2;
 
   box-sizing: border-box;
   width: 250px;
   height: 250px;
-  padding: 30px 0 0 20px;
+  padding: 26px 0 0 20px;
 
   background: #ffffff;
 }
@@ -516,12 +529,16 @@ ul {
   text-transform: uppercase;
 }
 .contact-us p {
-  margin-bottom: 33px;
+  margin-top: 12px;
+  margin-bottom: 29px;
 
   font-size: 16px;
   line-height: 20px;
+    color: #666666;
 }
 .iframe-map {
+  z-index: 1;
+
   width: 100%;
   height: 415px;
 
@@ -835,27 +852,43 @@ input[type=checkbox]:disabled + label {
   background-repeat: no-repeat;
   background-size: 100%;
   border-top: 30px solid #f1f1f1;
+  border-radius: 4px;
   border-image: url("../img/catalog-image-border.png") 30 0 0 0;
 }
 .image-mockup:hover {
   border-image: url("../img/catalog-image-border-hover.png") 30 0 0 0;
 }
+.image-mockup-aviator,
+.image-mockup-sunset,
+.image-mockup-forte,
+.image-mockup-modern,
+.image-mockup-avenue,
+.image-mockup-dovetail {
+  width: 240px;
+  height: 240px;
+}
 .image-mockup-aviator {
+  background-color: #372415;
   background-image: url("../img/aviator.jpg");
 }
 .image-mockup-sunset {
+  background-color: #edc580;
   background-image: url("../img/sunset.jpg");
 }
 .image-mockup-forte {
+  background-color: #d2e4e8;
   background-image: url("../img/forte.jpg");
 }
 .image-mockup-modern {
+  background-color: #5d261f;
   background-image: url("../img/modern-organic-thai.jpg");
 }
 .image-mockup-avenue {
+  background-color: #eae8e2;
   background-image: url("../img/avenue.jpg");
 }
 .image-mockup-dovetail {
+  background-color: #f9f5ea;
   background-image: url("../img/dovetail.jpg");
 }
 .features-item {
@@ -889,7 +922,7 @@ input[type=checkbox]:disabled + label {
 .features-item-hover p {
   margin: 0;
   margin-top: 6px;
-  margin-bottom: 37px;
+  margin-bottom: 32px;
   margin-left: 15px;
 
   font-size: 14px;
@@ -922,8 +955,6 @@ input[type=checkbox]:disabled + label {
   padding: 8px 30px;
 }
 .btn-pagination-active {
-  display: inline-block;
-
   color: #000000;
 
   background-color: #ffffff;
@@ -943,11 +974,12 @@ input[type=checkbox]:disabled + label {
 .input-email {
   margin-left: 16px;
 }
-.popup-form {
+.contact-us-popup {
   position: absolute;
   top: 278px;
   bottom: 0;
   left: 49.3%;
+  z-index: 2;
 
   display: none;
   box-sizing: border-box;
@@ -1180,7 +1212,7 @@ input[type=checkbox]:disabled + label {
             transform: translate(-50%, 10px);
   }
   100% {
-    -webkit-transform: translate(-50%, -800px);
-            transform: translate(-50%, -800px);
+    -webkit-transform: translate(-50%, -1800px);
+            transform: translate(-50%, -1800px);
   }
 }

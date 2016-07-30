@@ -148,8 +148,8 @@
             <a class="icon-up-dir" href="#"></a>
           </div>
         </div>
-        <article class="features-item">
-          <div class="image-mockup image-mockup-aviator">
+        <article class="features-item image-mockup">
+          <div class="image-mockup-aviator">
             <div class="features-item-hover">
               <h1>Aviator</h1>
               <p>Одностраничный макет <br> с авторским дизайном</p>
@@ -157,8 +157,8 @@
             </div>
           </div>
         </article>
-        <article class="features-item">
-          <div class="image-mockup image-mockup-sunset">
+        <article class="features-item image-mockup">
+          <div class="image-mockup-sunset">
             <div class="features-item-hover">
               <h1>Sunset</h1>
               <p>Интернет-магазин <br> с личным кабинетом</p>
@@ -166,8 +166,8 @@
             </div>
           </div>
         </article>
-        <article class="features-item">
-          <div class="image-mockup image-mockup-forte">
+        <article class="features-item image-mockup">
+          <div class="image-mockup-forte">
             <div class="features-item-hover">
               <h1>Forte</h1>
               <p>Отличный макет <br> для личного блога</p>
@@ -175,8 +175,8 @@
             </div>
           </div>
         </article>
-        <article class="features-item">
-          <div class="image-mockup image-mockup-modern">
+        <article class="features-item image-mockup">
+          <div class="image-mockup-modern">
             <div class="features-item-hover">
               <h1>Modern Organic<br> Thai</h1>
               <p>Сайт для ресторана <br> быстрого питания</p>
@@ -184,8 +184,8 @@
             </div>
           </div>
         </article>
-        <article class="features-item">
-          <div class="image-mockup image-mockup-avenue">
+        <article class="features-item image-mockup">
+          <div class="image-mockup-avenue">
             <div class="features-item-hover">
               <h1>Avenue</h1>
               <p>Макет для блога <br> о путешествиях</p>
@@ -193,8 +193,8 @@
             </div>
           </div>
         </article>
-        <article class="features-item">
-          <div class="image-mockup image-mockup-dovetail">
+        <article class="features-item image-mockup">
+          <div class="image-mockup-dovetail">
             <div class="features-item-hover">
               <h1>Dovetail</h1>
               <p>Интернет-магазин <br> с галереей товаров</p>
@@ -217,15 +217,15 @@
         <span class="btn-popup-close" title="Закрыть"></span>
         <div class="popup-form-input input-name">
           <label class="name" for="name">Ваше имя:</label>
-          <input type="text" name="name" id="name"  placeholder="Представьтесь, пожалуйста">
+          <input type="text" name="name" id="name" required placeholder="Представьтесь, пожалуйста">
         </div>
         <div class="popup-form-input input-email">
           <label class="email" for="email">Ваш e-mail:</label>
-          <input type="email" name="email" id="email"  placeholder="Для отправки ответа">
+          <input type="email" name="email" id="email" required placeholder="Для отправки ответа">
         </div>
         <div class="popup-form-textarea">
           <label class="text-letter" for="text-letter">Текст письма:</label>
-          <textarea name="textletter" id="text-letter"  placeholder="В свободной форме" cols="40" rows="3"></textarea>
+          <textarea name="textletter" id="text-letter" required placeholder="В свободной форме"></textarea>
         </div>
         <button class="btn btn-send" type="submit">Отправить</button>
       </form>
@@ -236,7 +236,7 @@
         <p>191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8 <br><br> тел. +7 (812) 275-75-75</p>
         <a class="btn btn-contact-us" href="/contact-us-form.html">Напишите нам</a>
       </div>
-      <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.5737629548605!2d30.318895523483082!3d59.93960435112352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1467892172376" allowfullscreen></iframe>
+      <div id="map" class="iframe-map"></div>
     </section>
     <div class="container">
       <footer class="main-footer">
@@ -251,7 +251,27 @@
         </div>
       </footer>
     </div>
+      <script>
+
+        // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+        // Australia.
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 17,
+            center: {lat: 59.939102, lng: 30.320838}
+          });
+
+          var image = 'img/mark-map.png';
+          var beachMarker = new google.maps.Marker({
+            position: {lat: 59.938700, lng: 30.324000},
+            map: map,
+            icon: image
+          });
+        }
+
+    </script>
     <script src="js/scripts.js"></script>
     <!-- <script src="js/scripts.min.js"></script> -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCG3TQ1uFF-4Eh2p3qIbsDGO_s5qynYzp0&signed_in=true&callback=initMap"></script>
   </body>
 </html>
