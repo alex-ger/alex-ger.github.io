@@ -142,7 +142,7 @@ ul {
 }
 .main-header {
   padding-top: 28px;
-  padding-bottom: 46px;
+  padding-bottom: 52px;
 }
 .index-logo {
   width: 139px;
@@ -202,7 +202,7 @@ ul {
   font-weight: 500;
 }
 .learn-more-action p {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 .btn {
   display: inline-block;
@@ -221,14 +221,14 @@ ul {
   cursor: pointer;
 }
 .btn-learn-more {
-  padding: 12px 71px;
+  padding: 10px 71px;
 
   background-color: #fb565a;
 }
 .btn-order-website,
 .btn-order-application,
 .btn-order-presentation {
-  padding: 12px 40px;
+  padding: 10px 40px;
 }
 .btn-order-website:active,
 .btn-order-application:active,
@@ -268,7 +268,7 @@ ul {
   background-color: #c09b24;
 }
 .btn-contact-us {
-  padding: 10px 56px;
+  padding: 10px 55px;
 
   background-color: #fb565a;
 }
@@ -362,7 +362,7 @@ ul {
 .mini-catalog {
   min-height: 425px;
   padding-top: 80px;
-  padding-bottom: 88px;
+  padding-bottom: 80px;
 
   border-bottom: 2px solid #eeeeee;
 }
@@ -376,6 +376,9 @@ ul {
 .mini-catalog-image img {
   width: 240px;
   height: 124px;
+}
+.mini-catalog-title{
+    margin-bottom: 25px;
 }
 .mini-catalog-item:nth-child(2) {
   padding-left: 26px;
@@ -392,13 +395,13 @@ ul {
   text-transform: uppercase;
 }
 .mini-catalog-title p {
-  margin-bottom: 27px;
+
+    margin-bottom: 0px;
 
   font-size: 15px;
   line-height: 22px;
 }
 .about-studio {
-  padding-top: 70px;
   padding-bottom: 47px;
 
   border-bottom: 2px solid #eeeeee;
@@ -407,6 +410,7 @@ ul {
   min-width: 570px;
 
   vertical-align: middle;
+    padding-top: 70px;
 }
 .about-studio-info li,
 .about-studio-work li {
@@ -438,6 +442,7 @@ ul {
   min-width: 300px;
 
   vertical-align: middle;
+    padding-top: 60px;
 }
 .about-studio-logo {
   margin-bottom: 21px;
@@ -516,7 +521,7 @@ ul {
 
   box-sizing: border-box;
   width: 250px;
-  height: 250px;
+  height: 240px;
   padding: 26px 0 0 20px;
 
   background: #ffffff;
@@ -614,6 +619,7 @@ ul {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+    margin-bottom: 15px;
 }
 .range-count {
   width: 240px;
@@ -723,7 +729,7 @@ input[type="range"]:hover {
 }
 .radio,
 .checkbox {
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 .features label {
   display: inline-block;
@@ -752,6 +758,10 @@ input[type="range"]:hover {
 }
 .features label:before {
   content: "\2610";
+}
+.icon-circle span,
+.icon-check span{
+    margin-left: 6px;
 }
 input[type=radio],
 input[type=checkbox] {
