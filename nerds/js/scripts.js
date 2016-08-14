@@ -1,4 +1,3 @@
-//PopUp Window Contact Us
 var link = document.querySelector(".btn-contact-us");
 
 var popup = document.querySelector(".contact-us-popup");
@@ -51,19 +50,4 @@ window.addEventListener("keydown", function(event) {
   }
 });
 
-// Google Maps Marker
-function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 17,
-    center: {lat: 59.939102, lng: 30.320838}
-  });
 
-  var image = 'img/mark-map.png';
-  var marker = new google.maps.Marker({
-    position: {lat: 59.938550, lng: 30.323700},
-    map: map,
-    icon: image,
-    animation: google.maps.Animation.BOUNCE,
-    title:"NЁRDS DESIGN STUDIO 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8",
-  });
-}
